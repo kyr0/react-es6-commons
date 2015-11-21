@@ -1,0 +1,14 @@
+$padding: 20px;
+
+.login-box-inner {
+  padding: $padding;
+}
+
+.login-box-inner button[type=submit] {
+  width: 100%;
+}
+
+.login-header {
+  padding: $padding;
+  text-align: center;
+}

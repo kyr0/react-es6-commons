@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["index.js"],"sourcesContent":["import App from './App';\nimport AppModule from './AppModule';\nimport Component from './Component';\n\nexport default {\n    App,\n    AppModule,\n    Component\n}"],"file":"index.js","sourceRoot":"/Users/aronhomberg/Source/ONPEX-Idea/react-es6-commons/src"}
