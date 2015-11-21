@@ -6,7 +6,7 @@ boilerplate
  
 ## Setup
  
-Please goto: [react-es6-commons Setup](https://www.github.com/kyr0/react-es6-commons#Setup)
+Please goto: [react-es6-commons Setup](https://www.github.com/kyr0/react-es6-commons#setup)
 
 ## Development lifecycle
 
