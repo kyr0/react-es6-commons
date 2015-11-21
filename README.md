@@ -33,7 +33,7 @@ Then run:
 ...to resolve any dependency of the boilerplate app.
 
 Now, we are ready to dig into the code. To read more about the boilerplate app's architecture, 
-goto [boilerplate](https://www.github.com/kyr0/react-es6-commons/boilerplate).
+goto [boilerplate](https://github.com/kyr0/react-es6-commons/tree/master/boilerplate).
 
 ## Please contribute. Pushes welcome!
 
