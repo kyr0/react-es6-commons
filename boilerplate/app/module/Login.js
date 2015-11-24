@@ -11,10 +11,11 @@ class Login extends AppModule {
     }
 
     onRoute() {
-        router.add('/', () => this.showLoginView());
+        router.add('#', this);
+        router.add('#login', this);
     }
 
-    showLoginView() {
+    onRouteMatch() {
         ReactDOM.render(<LoginView />, this.rootElement);
     }
 }

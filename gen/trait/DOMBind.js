@@ -10,6 +10,10 @@ var _Injectable2 = require('../Injectable');
 
 var _Injectable3 = _interopRequireDefault(_Injectable2);
 
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38,17 +42,7 @@ var DOMBind = (function (_Injectable) {
     }], [{
         key: 'bind',
         value: function bind(selector) {
-
-            if ($ || jQuery) {
-
-                return ($ || jQuery)(selector)[0];
-            } else if (document.querySelector) {
-
-                return document.querySelector(selector);
-            } else {
-
-                throw new Error('No native browser support for selecting DOM elements available. Please include jQuery.');
-            }
+            return (0, _jquery2.default)(selector)[0];
         }
     }]);
 
@@ -58,5 +52,5 @@ var DOMBind = (function (_Injectable) {
 global.DOMBind = DOMBind;
 
 exports.default = DOMBind;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkRPTUJpbmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFFTSxPQUFPO2NBQVAsT0FBTzs7QUFFVCxhQUZFLE9BQU8sR0FFSzs4QkFGWixPQUFPOztzRUFBUCxPQUFPO0tBSVI7O2lCQUpDLE9BQU87O2lDQU1BLE1BQU0sRUFBRTs7QUFFYixnQkFBSSxJQUFJLENBQUMsU0FBUyxFQUFFO0FBQ2hCLG9CQUFJLENBQUMsU0FBUyxFQUFFLENBQUM7YUFDcEI7U0FDSjs7OzZCQUVXLFFBQVEsRUFBRTs7QUFFbEIsZ0JBQUksQ0FBQyxJQUFJLE1BQU0sRUFBRTs7QUFFYix1QkFBTyxDQUFDLENBQUMsSUFBRSxNQUFNLENBQUEsQ0FBRSxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQzthQUVuQyxNQUFNLElBQUksUUFBUSxDQUFDLGFBQWEsRUFBRTs7QUFFL0IsdUJBQU8sUUFBUSxDQUFDLGFBQWEsQ0FBQyxRQUFRLENBQUMsQ0FBQzthQUUzQyxNQUFNOztBQUVILHNCQUFNLElBQUksS0FBSyxDQUFDLHdGQUF3RixDQUFDLENBQUM7YUFDN0c7U0FDSjs7O1dBM0JDLE9BQU87OztBQThCYixNQUFNLENBQUMsT0FBTyxHQUFHLE9BQU8sQ0FBQzs7a0JBRVYsT0FBTyIsImZpbGUiOiJET01CaW5kLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEluamVjdGFibGUgZnJvbSAnLi4vSW5qZWN0YWJsZSc7XG5cbmNsYXNzIERPTUJpbmQgZXh0ZW5kcyBJbmplY3RhYmxlIHtcblxuICAgIGNvbnN0cnVjdG9yKCkge1xuICAgICAgICBzdXBlcigpO1xuICAgIH1cblxuICAgIG9uSW5qZWN0KHRhcmdldCkge1xuXG4gICAgICAgIGlmICh0aGlzLm9uRE9NQmluZCkge1xuICAgICAgICAgICAgdGhpcy5vbkRPTUJpbmQoKTtcbiAgICAgICAgfVxuICAgIH1cblxuICAgIHN0YXRpYyBiaW5kKHNlbGVjdG9yKSB7XG5cbiAgICAgICAgaWYgKCQgfHwgalF1ZXJ5KSB7XG5cbiAgICAgICAgICAgIHJldHVybiAoJHx8alF1ZXJ5KShzZWxlY3RvcilbMF07XG5cbiAgICAgICAgfSBlbHNlIGlmIChkb2N1bWVudC5xdWVyeVNlbGVjdG9yKSB7XG5cbiAgICAgICAgICAgIHJldHVybiBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKHNlbGVjdG9yKTtcblxuICAgICAgICB9IGVsc2Uge1xuXG4gICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ05vIG5hdGl2ZSBicm93c2VyIHN1cHBvcnQgZm9yIHNlbGVjdGluZyBET00gZWxlbWVudHMgYXZhaWxhYmxlLiBQbGVhc2UgaW5jbHVkZSBqUXVlcnkuJyk7XG4gICAgICAgIH1cbiAgICB9XG59XG5cbmdsb2JhbC5ET01CaW5kID0gRE9NQmluZDtcblxuZXhwb3J0IGRlZmF1bHQgRE9NQmluZDsiXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkRPTUJpbmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBR00sT0FBTztjQUFQLE9BQU87O0FBRVQsYUFGRSxPQUFPLEdBRUs7OEJBRlosT0FBTzs7c0VBQVAsT0FBTztLQUlSOztpQkFKQyxPQUFPOztpQ0FNQSxNQUFNLEVBQUU7O0FBRWIsZ0JBQUksSUFBSSxDQUFDLFNBQVMsRUFBRTtBQUNoQixvQkFBSSxDQUFDLFNBQVMsRUFBRSxDQUFDO2FBQ3BCO1NBQ0o7Ozs2QkFFVyxRQUFRLEVBQUU7QUFDbEIsbUJBQU8sc0JBQUUsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7U0FDekI7OztXQWZDLE9BQU87OztBQWtCYixNQUFNLENBQUMsT0FBTyxHQUFHLE9BQU8sQ0FBQzs7a0JBRVYsT0FBTyIsImZpbGUiOiJET01CaW5kLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEluamVjdGFibGUgZnJvbSAnLi4vSW5qZWN0YWJsZSc7XG5pbXBvcnQgJCBmcm9tICdqcXVlcnknO1xuXG5jbGFzcyBET01CaW5kIGV4dGVuZHMgSW5qZWN0YWJsZSB7XG5cbiAgICBjb25zdHJ1Y3RvcigpIHtcbiAgICAgICAgc3VwZXIoKTtcbiAgICB9XG5cbiAgICBvbkluamVjdCh0YXJnZXQpIHtcblxuICAgICAgICBpZiAodGhpcy5vbkRPTUJpbmQpIHtcbiAgICAgICAgICAgIHRoaXMub25ET01CaW5kKCk7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICBzdGF0aWMgYmluZChzZWxlY3Rvcikge1xuICAgICAgICByZXR1cm4gJChzZWxlY3RvcilbMF07XG4gICAgfVxufVxuXG5nbG9iYWwuRE9NQmluZCA9IERPTUJpbmQ7XG5cbmV4cG9ydCBkZWZhdWx0IERPTUJpbmQ7Il19
 //# sourceMappingURL=DOMBind.js.map
