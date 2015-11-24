@@ -1,6 +1,6 @@
 {
   "name": "react-es6-commons",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "repository": "https://github.com/kyr0/react-es6-commons",
   "description": "Common classes you may extend from to build ES6+ driven React experiences with ease and simplicity",
   "main": "index.js",
